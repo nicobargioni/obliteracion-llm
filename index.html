@@ -142,8 +142,12 @@
   .ro-card.cap .num { color: var(--teal); }
 
   /* showcase */
+  .showcase-head { margin-top: 30px; }
+  .showcase-head h3 { font-size: 18px; font-weight: 700; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .showcase-head p { color: var(--muted); font-size: 13.5px; line-height: 1.5; margin: 0; max-width: 62ch; }
+  .showcase-head .mono { color: var(--purple-bright); }
   .showcase {
-    margin-top: 26px;
+    margin-top: 14px;
     background: var(--panel-2);
     border: 1px solid var(--line);
     border-left: 4px solid var(--red);
@@ -219,6 +223,11 @@
         <span>0.2 · rechazo apagado</span>
         <span>2.25 · colapso</span>
       </div>
+    </div>
+
+    <div class="showcase-head">
+      <h3>Moví el slider y observá cómo cambia la respuesta</h3>
+      <p>A cada paso de <span class="mono">α</span> se le resta, en la salida de las 28 capas, la proyección de la activación sobre la dirección de rechazo (<span class="mono">h' = h − α·(h·r̂)·r̂</span>). Es la misma intervención, aplicada con más o menos fuerza — no un modelo distinto en cada punto.</p>
     </div>
 
     <div class="showcase" id="showcase">
